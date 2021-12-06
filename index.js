@@ -2,7 +2,6 @@ function hasTargetSum(array, target) {
   // Write your algorithm here
   for (let i = 0; i <= array.length; i++) {
     for (let j = 0; j <= array.length; j++) {
-        debugger
       if (i != j) {
         if (array[i] + array[j] === target) {
           return true
@@ -24,6 +23,9 @@ function hasTargetSum(array, target) {
   [1, 2, 3, 4, 5, 6, 7, 8, 9]
   /* 
     Write the Big O time complexity of your function here
+
+    runtime: O(n^2)
+    space: n
   */
 
   /* 
